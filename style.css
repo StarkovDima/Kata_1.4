@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Medium.woff') format('woff'),
+        url('fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 24px;
+    color: #1B1C21;
+    font-weight: normal;
+    font-family: 'TT Lakes';
+    margin: 0;
+    background-color: #F8F8F8;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+}
+li {
+    list-style-type: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 320px;
+    min-height: 764px;
+    height: 100vh;
+    padding-top: 18px;
+    padding-bottom: 32px;
+    background-color: #ffffff;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+.menu {
+    margin: 0 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 1000px;
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 78px;
+}
+.header__logo {
+    display: inline-block;
+    height: 100%;
+}
+.header__leftside {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 0.2s;
+}
+.button:hover {
+    filter: drop-shadow(0px 0px 5px #FF3E78);
+}
+.main {
+    flex: 1 1 33.333333%;
+}
+.main__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 32px;
+}
+.list__link {
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    color: #1B1C21;
+    font-weight: 500;
+    transition-duration: 0.2s;
+}
+.list__link:hover {
+    opacity: 0.6;
+}
+.list__link--active {
+    color: #7E7E82;
+}
+.list__link--active::before {
+    content: "";
+    display: block;
+    height: 32px;
+    width: 8px;
+    border-radius: 4px;
+    background: #41F6D7;
+    position: absolute;
+    left: -4px;
+}
+.footer {
+    /* margin-top: 100px;
+    margin-bottom: 0px; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.footer__feedback {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.email__item {
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+}
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.footer-list__link {
+    display: flex;
+    align-items: center;
+}
+.phone__item {
+    font-family: "TT Lakes Bold";
+    color: #1B1C21;
+}
+.language__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+}
+.language-list__link {
+    font-family: "TT Lakes Medium";
+    transition-duration: 0.2s;
+}
+.language-list__link:hover {
+    opacity: 0.6;
+}
+.language-list__link--active {
+    color: #7E7E82;
+}
